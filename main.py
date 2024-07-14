@@ -78,7 +78,7 @@ async def connect_to_wss(socks5_proxy, user_id):
                 continue  # Continue to try to reconnect or handle other errors
 
 async def main():
-    _user_id = 'Replace Your User ID HERE'   # Replace Your User ID HERE 
+    _user_id = 'bd855df1-b472-4fc6-b779-026d7a8cf377'   # Replace Your User ID HERE 
     proxy_file = 'proxy.txt' # your Path to Proxy3.txt file 
     # formate => socks5://username:pass@ip:port
     with open(proxy_file, 'r') as file:
@@ -105,7 +105,7 @@ async def main():
             tasks[new_task] = proxy
 
 def remove_proxy_from_list(proxy):
-    with open("proxy.txt", "r+") as file:
+    with open("proxy.txt", "50") as file:
         lines = file.readlines()
         file.seek(0)
         for line in lines:
